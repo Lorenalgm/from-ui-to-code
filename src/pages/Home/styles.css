@@ -14,6 +14,11 @@
     padding: 0 10px;
 }
 
+.home-container .events-list .event-card:first-child{
+    background-color: var(--primary);
+    color: var(--font);
+}
+
 @media only screen and (min-width: 600px){
     .home-container{
         text-align: unset;
