@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles.css';
 import logo from '../../assets/logo.png';
 import Card from '../../componets/Card';
+import events from './events.json';
 
 export default function Home(){
     return(
@@ -12,10 +13,16 @@ export default function Home(){
             <main>
                 <h1>Próximos eventos</h1>
                 <div className="events-list">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {events.map(event => (
+                        <Card 
+                        className="event-card"
+                        day={event.day}
+                        month={event.month}
+                        title={event.title}
+                        hour={event.hour}
+                        speaker={event.speaker}
+                    />
+                    ))}
                 </div>
             </main>
         </div>
