@@ -1,0 +1,38 @@
+.card-container{
+    background-color: var(--secondary);
+    padding: 1em;
+    margin-bottom: 1em;
+    color: var(--background);
+}
+
+.card-container .date{
+    line-height: 10px;
+    margin-bottom: 2.5em;
+}
+
+.card-container .date h1{
+    font-size: 42px;
+}
+
+.card-container .date h2{
+    font-weight: normal;
+}
+
+.card-container .event-title{
+    font-weight: normal;
+}
+
+.card-container .event-time{
+    color: var(--font);
+    font-weight: bold;
+    line-height: 5px;
+    margin-top: 2em;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 600px){
+    .card-container{
+        margin-bottom: 0;
+        width: 17em;
+    }
+}

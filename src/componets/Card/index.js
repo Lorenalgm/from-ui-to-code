@@ -8,7 +8,7 @@ export default function Card(){
                 <h1>14</h1>
                 <h2>JUNHO</h2>
             </div>
-            <h1 className="event-title">Como criar seu primeiro bot no slack</h1>
+            <h3 className="event-title">Como criar seu primeiro bot no slack</h3>
             <div className="event-time">
                 <p className="hour">17:00 - 18:00h</p>
                 <p className="speaker">Luanda</p>
