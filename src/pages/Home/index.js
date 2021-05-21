@@ -11,7 +11,7 @@ export default function Home(){
             </header>
             <main>
                 <h1>Próximos eventos</h1>
-                <div className="events list">
+                <div className="events-list">
                     <Card />
                     <Card />
                     <Card />
