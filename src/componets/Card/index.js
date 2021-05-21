@@ -1,17 +1,17 @@
 import React from 'react';
 import './styles.css'
 
-export default function Card(){
+export default function Card(props){
     return(
-        <div className="card-container">
+        <div className={`card-container ${props.className}`}>
             <div className="date">
-                <h1>14</h1>
-                <h2>JUNHO</h2>
+                <h1>{props.day}</h1>
+                <h2>{props.month}</h2>
             </div>
-            <h3 className="event-title">Como criar seu primeiro bot no slack</h3>
+            <h3 className="event-title">{props.title}</h3>
             <div className="event-time">
-                <p className="hour">17:00 - 18:00h</p>
-                <p className="speaker">Luanda</p>
+                <p className="hour">{props.hour}</p>
+                <p className="speaker">{props.speaker}</p>
             </div>
         </div>
     )
